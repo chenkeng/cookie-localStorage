@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>localStorage</h1>
+    <button>点击按钮</button>
+    <p> 在此页面增加一个localStorage的属性名 '姓名'</p>
+</body>
+
+<script type="text/javascript">
+
+    var btn=document.getElementsByTagName('button')[0];
+        btn.onclick=function(){
+            localStorage.setItem("姓名","陈超汉");
+            localStorage.setItem("我喜欢","美女");
+            window.location.reload();
+        }
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>getCookie() && delCookie()</h1>
+    <p>getCookie()在这个页面获取一条属性名为name 的数据，在此处输出 name 的值为：  <span></span></p>
+    <button type="button" name="button">点击清楚 cookie</button>
+</body>
+<script src="common.js"></script>
+    <script>
+        var result= getCookie('name');
+        var span=document.getElementsByTagName('span')[0];
+        span.innerText=result;
+
+        var btn=document.getElementsByTagName('button')[0];
+
+            btn.onclick=function(){
+                delCookie('name');
+                window.location.reload();
+            }
+    </script>
+</html>
